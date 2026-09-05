@@ -1,0 +1,3 @@
+prompt:
+  selected: prompt_v1.md
+  description: This prompt is designed to help you generate a radiology report based on the provided template content and dictation. The model will analyze the input data and produce a structured report that adheres to the specified format. Please ensure that the template content and dictation are accurate and complete for optimal results.
