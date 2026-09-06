@@ -2,9 +2,16 @@ prompt:
   v1: 
     name: prompt_v1.md
     description: This prompt is designed to help you generate a radiology report based on the provided template content and dictation. The model will analyze the input data and produce a structured report that adheres to the specified format. Please ensure that the template content and dictation are accurate and complete for optimal results.
+  v2: 
+    name: prompt_v2.md
+    description: This prompt is designed to help you generate a radiology report based on the provided template content and dictation. The model will analyze the input data and produce a structured report that adheres to the specified format. Please ensure that the template content and dictation are accurate and complete for optimal results.
 
 model:
   m1: 
     name: ollama/deepseek-r1:1.5b
+    base: http://localhost:11434/
+    description: A large language model designed for radiology report generation, capable of understanding complex medical terminology and producing structured reports based on provided templates and dictation.
+  m2: 
+    name: ollama/qwen2.5:7b
     base: http://localhost:11434/
     description: A large language model designed for radiology report generation, capable of understanding complex medical terminology and producing structured reports based on provided templates and dictation.

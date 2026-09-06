@@ -19,6 +19,7 @@ Rules:
 
 9. If the template contains an OTHER FINDINGS field, use it only for relevant findings that do not belong elsewhere. Leave it empty when not needed.
 10. Use modality, body part, study description, age band, and sex only as context; they do not provide additional findings.
+11. There should only be 1 FINDINGS and 1 IMPRESSIONS SECTION.
 
 Input:
 - Modality: {modality}
