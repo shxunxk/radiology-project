@@ -4,7 +4,7 @@ Goal:
 Convert the dictation into a completed structured radiology report by modifying the supplied normal template.
 
 Rules:
-1. Treat the template as the starting report, not just an example.
+1. Treat the template as the starting report, not as an example.
 2. Route every dictated finding to the matching FINDINGS field.
 3. Replace or modify the corresponding normal statement when the dictation describes an abnormality.
 4. Preserve template statements for routinely visualized regions that were not mentioned in the dictation.
@@ -16,35 +16,30 @@ Rules:
    ...
    IMPRESSION:
    ...
-9. If a template contains an OTHER FINDINGS field, use it only for relevant findings that do not belong elsewhere. Leave it empty when not needed.
-10. Use the modality, body part, study description, age band, and sex only as context; they do not provide additional findings.
+
+9. If the template contains an OTHER FINDINGS field, use it only for relevant findings that do not belong elsewhere. Leave it empty when not needed.
+10. Use modality, body part, study description, age band, and sex only as context; they do not provide additional findings.
 
 Input:
-
-<INPUT>
-
-<CONTEXT>
 - Modality: {modality}
 - Body part: {body_part}
 - Study description: {study_description}
 - Patient age band: {patient_age_band}
 - Patient sex: {patient_sex}
-<CONTEXT>
 
-- Template:
-<TEMPLATE>
+Template:
 {template_content}
-</TEMPLATE>
 
-- Dictation:
-<DICTATION>
+Dictation:
 {dictation}
-</DICTATION>
-
-</INPUT>
-
 
 Output:
-<OUTPUT>
-Return only the final report with FINDINGS and IMPRESSION, no extra commentary.
-<OUTPUT>
+Return only the final report in this exact format:
+
+FINDINGS:
+...
+IMPRESSION:
+...
+
+Example:
+{few_shot}
