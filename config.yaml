@@ -15,3 +15,12 @@ model:
     name: ollama/qwen2.5:7b
     base: http://localhost:11434/
     description: A large language model designed for radiology report generation, capable of understanding complex medical terminology and producing structured reports based on provided templates and dictation.
+  m3:
+    name: ollama/qwen2.5:0.5b
+    base: http://localhost:11434/
+    description: A fast non-reasoning language model for structured radiology report generation.
+
+  m4:
+    name: ollama/qwen2.5:3b
+    base: http://localhost:11434/
+    description: A balanced non-reasoning language model for structured radiology report generation.

@@ -33,7 +33,9 @@ STRICT OUTPUT REQUIREMENTS
 - Never repeat, nest, or add another `FINDINGS:` or `IMPRESSION:` heading.
 - Do not output any text before `FINDINGS:`.
 - Do not output any text after the impression.
-- Preserve the template's field order and formatting whenever possible.
+- Preserve the template's field order and formatting exactly.
+- Copy every template field into the output, including fields that remain unchanged.
+- Never output square-bracket placeholders, instructions, explanations, or the words `FINAL OUTPUT FORMAT`.
 
 CURRENT CASE PARAMETERS
 
@@ -51,10 +53,5 @@ CURRENT DICTATION
 
 {dictation}
 
-FINAL OUTPUT FORMAT
-
-FINDINGS:
-[the current template with only dictation-supported modifications]
-
-IMPRESSION:
-[concise summary of the important dictation-supported abnormalities]
+OUTPUT THE COMPLETED REPORT NOW.
+Start with `FINDINGS:` and end after the completed `IMPRESSION:` text.
