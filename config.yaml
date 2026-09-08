@@ -24,3 +24,8 @@ model:
     name: ollama/qwen2.5:3b
     base: http://localhost:11434/
     description: A balanced non-reasoning language model for structured radiology report generation.
+
+  m5:
+    name: ollama/llama3.1:8b
+    base: http://localhost:11434/
+    description: A large non-reasoning language model for structured radiology report generation.
